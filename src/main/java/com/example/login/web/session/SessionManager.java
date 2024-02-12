@@ -54,7 +54,6 @@ public class SessionManager {
         }
     }
 
-
     public Cookie findCookie(HttpServletRequest request, String cookieName) {
         if (request.getCookies() == null) {
             return null;
@@ -64,5 +63,4 @@ public class SessionManager {
                 .findAny()
                 .orElse(null);
     }
-
 }
